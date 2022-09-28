@@ -1,0 +1,170 @@
+:root {
+    --primario: #291d50;
+    --secundario: goldenrod;
+    --blanco: #fff;
+    --negro: #000000;
+    --fuentePrincipal: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+    color: var(--primario)
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  li{
+    list-style-type:none;
+  }
+  p{
+    font-size: 2rem;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  [class$='__contenedor'] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+  [class$='__heading']{
+    text-align: center;
+    padding-top: 5rem;
+  }
+  @media (min-width: 768px){ 
+    [class$='__heading']{
+      padding-top: 10rem;
+    }
+  }
+  /*utilidades*/
+  .mt-5 {
+    margin-top: 5rem;
+  }
+ 
+
+/*header*/
+.header__logo{
+  margin: 0 auto;
+}
+
+.header__texto{
+  background-image: url(../img/fondo-cabecera.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding: 3rem 2rem;
+}
+.encabezado__header{
+  color: var(--blanco);
+   margin: 0;
+  
+}
+.header__nav{
+  background-color: var(--blanco);
+}
+.nav_principal{
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secundario);
+}
+
+.nav__a{
+font-size: 2rem;
+padding: 2rem;
+}
+.nav__icono{
+  width: 5rem;
+  height: 5rem;
+ 
+}
+.header__img{
+  width: 15rem;
+  margin: 0 auto;
+}
+
+/*main*/
+.info{
+margin-top: 5rem;
+display: grid;
+grid-template-rows: 1fr 2fr;
+}
+.info__texto{
+  background-color: var(--blanco);
+  grid-row: 2/3;
+  padding: 3rem 0;
+}
+
+.icono{
+  background-color:var(--secundario);
+  border-radius: 20rem;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.info__1{
+  background-image: url(../img/cervezas.jpg);
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-position: 1px -200px;
+}
+.info__2{
+  background-image: url(../img/ubicacion.png);
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-position: -100px -80px;
+}
+
+.info__3{
+  background-image: url(../img/salchichas.jpg);
+  background-repeat: no-repeat;
+  background-size:70rem;
+  background-position: -10px -10px;
+}
+/*footer*/
+
+.footer{
+  background-color: var(--secundario);
+  margin-bottom: 0;
+}
+
+.encabezado__footer{
+  color: var(--blanco);
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 5rem;
+}
+
+@media (min-width: 768px){ 
+  .main__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
